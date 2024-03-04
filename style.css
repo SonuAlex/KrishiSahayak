@@ -9,12 +9,12 @@
 }
 
 .carousel{
-  height: 50vh;
+  height: 75vh;
 }
 
 .carousel-inner{
   display: flex;
-  height: 50vh;
+  height: 75vh;
   object-fit: contain;
 }
 
