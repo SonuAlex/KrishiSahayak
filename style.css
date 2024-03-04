@@ -68,6 +68,9 @@
 
 .carousel__nav{
   display: flex;
+  position: absolute;
+  top: 72vh;
+  left: 43vw;
   justify-content: center;
   padding: 10px 0;
 }
