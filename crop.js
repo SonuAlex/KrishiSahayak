@@ -18,6 +18,7 @@ crop_search.addEventListener('click', () =>{
                 <td>No data</td>
                 <td>No data</td>
                 <td>No data</td>
+                <td>No data</td>
             </tr>`;
             document.getElementById('crop-table-body').innerHTML = markup
             console.log('Wrong Input');
