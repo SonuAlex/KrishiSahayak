@@ -34,14 +34,21 @@
   line-height: 1;
 }
 
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
 
 .carousel{
-  height: 92vh;
+  height: 100vh;
 }
 
 .carousel-inner{
   display: flex;
-  height: 92vh;
+  height: 100vh;
   object-fit: contain;
 }
 
@@ -487,7 +494,10 @@
   margin: 0;
 }
 
-.crop-table table, th, td{
-  border: 1.5px solid rgba(255, 255, 255, .2);
+.crop-table{
+  border-radius: 15px;
+}
+
+.crop-table th, td{
   text-align: center;
 }
