@@ -49,6 +49,38 @@
   background-size: cover;
 }
 
+.landing-sideImage {
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  right: 0;
+  top: 20vh;
+}
+
+.landing-sideImage img{
+  height: 70vh;
+}
+
+.landing-text{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: start;
+  color: white;
+  margin-left: 30px;
+}
+
+.landing-text h1{
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.landing-text p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .carousel{
   height: 100vh;
 }
