@@ -28,6 +28,8 @@ search.addEventListener('click', () => {
         weatherDetails.classList.add('active');
         error404.classList.remove('active');
 
+        const location_city = document.querySelector('.city-info');
+        const location_country = document.querySelector('.country-info');
         const image = document.querySelector('.weather-box img');
         const temperature = document.querySelector('.weather-box .temperature');
         const description = document.querySelector('.weather-box .description');
@@ -79,7 +81,9 @@ search.addEventListener('click', () => {
                     break;
             }
     
-            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`
+            location_city.innerHTML = `${city}, `;
+            location_country.innerHTML = `${json.sys.country}`;
+            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
