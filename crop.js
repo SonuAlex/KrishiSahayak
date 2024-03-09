@@ -1,6 +1,7 @@
 const crop_search = document.querySelector('.stateSelector button');
+const crop_searchInput = document.querySelector('.stateSelector input');
 
-crop_search.addEventListener('click', () =>{
+function performCropSearch() {
     const APIKey = '579b464db66ec23bdd000001d58e4dcb922348a949989f902c29e4ce';
     const state = document.querySelector('.stateSelector input').value;
 
@@ -38,4 +39,13 @@ crop_search.addEventListener('click', () =>{
 
         document.getElementById('crop-table-body').innerHTML = markup
     });
+}
+
+crop_search.addEventListener('click', () =>{
+    performCropSearch();
+});
+
+crop_searchInput.addEventListener('keypress', (e) => {
+    if(e.key == 'Enter')
+        performCropSearch();
 });
